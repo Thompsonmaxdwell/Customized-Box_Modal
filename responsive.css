@@ -1,0 +1,33 @@
+
+@media screen and (min-width:800px){
+    .box_modal_content{
+        width: 380px;
+        height:auto;
+        margin: 100px auto;
+    }
+
+    .box_modal_content_header{
+        padding: 2px;
+  
+    }
+    .box_modal_content_header h2{
+        font-size: 2.6em;
+      }
+
+      .Second__box__content{
+        background: #fff;
+        width:95%;
+        margin: 50px auto;
+        height:auto;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 4);
+        border-radius: 5px;
+        transition: all 1s ease-in-out;
+        position: absolute;
+        z-index:22;
+        top:100px;
+    }
+    
+
+
+      
+}

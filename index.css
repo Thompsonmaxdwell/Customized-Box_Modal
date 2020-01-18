@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+
+body{
+    background: #cccc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.box_wrapper{
+    background-color:orangered;
+    text-align:center;
+    padding:30px;
+}
+  /* BOX-MODAL  HERE */
+  .box-modal_wrapper{
+      position:fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.835);
+      overflow: hidden;
+      display: none;
+  }
+  .box_modal_content{
+      background: rgba(0, 0, 0, 0.568);
+      position: relative;
+      width: 92%;
+      height:auto;
+      margin: 50px auto;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 4);
+      animation: mm 0.9s ease-in-out  ;
+      -webkit-animation: mm 0.9s ease-in-out  ;
+}
+@keyframes mm{
+    from{opacity: 0;}
+    to{opacity: 1;} 
+
+} 
+  .box_modal_content_header{
+      background: rgba(220, 20, 60, 0.678);
+      padding: 1px;
+      text-align: center;
+  }
+ .box_modal_content_header h2{
+    font-style: italic;
+    font-size: 2em;
+    background-image: url('img/w.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+  }
+  .box_modal_close_icon{
+      color: black;
+      font-size: 1.3em;
+      float:right;
+      cursor: pointer;
+  }
+  .box_modal_close_icon:hover{
+      color: white;
+      font-size:1.3em;
+  }
+ .modal_body_text{
+     padding: .5em .7em;
+     color:grey;
+     text-align: center;
+     font-size: 1em;
+     line-height: 1.6;
+     font-weight:100;
+}
+  footer{
+      background: crimson;
+      padding: 6px;
+      text-align: center;
+      font-size: 1em;
+      font-weight:200;
+  }
+  footer p{color: white;}
+
+
+  .modal-btn, .btn_inside_box_modal{
+      background: crimson;
+      padding: 10px;
+      border:none;
+      font-weight: bold;
+      margin: 10px  0px;
+  }
+
+  .modal-btn:hover{
+      background: #333;
+      color: crimson;
+  }
+  
+
+/* Second__box__content */
+
+.Second__box__content{
+    background: #fff;
+    width:95%;
+    margin: 10px 10px;
+    height:auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 4);
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    z-index:22;
+    top:100px;
+}
+
+.Second_box_hide{
+  transform: scale(0, 0);
+  opacity: 0;
+  transform-origin: top;
+}
+.Second_box_open{
+    transform: scale(1, 1);
+    transition: all 1s ease-in-out;
+}
+.inside_box_close_icon{
+    text-align: end;
+    cursor: pointer;
+    padding:4px 10px;
+}
+.Second_box-modal__header{
+    background: rgba(220, 20, 60, 0.678);
+    margin: 0;
+    text-align: center;
+}
+.Second_box-modal__header h2{
+    font-weight: 600;
+    font-family: 'ZhiMangXing';
+}
+.Second_box_modal_body{
+    padding: 10px 0;
+}
+.Second_box_modal_body h3{
+    border-bottom: 1px solid green;
+    text-align: center;
+    font-weight: 200;
+    width: 65%;
+    margin:  10px auto;
+    font-family: 'ZhiMangXing';
+}
+.Second_box_modal_body p{
+  text-align: center;
+  font-weight: 10;
+  line-height: 1.5;
+  padding: 0  10px;
+}
+
+/* .overlay */
+.overlay{
+    background-color:rgba(0, 0, 0, 0.835);
+    height:100vh;
+    width:100%;
+    position: absolute;
+    top:0;
+    display: none;
+    animation: mm 0.9s ease-in-out  ;
+    -webkit-animation: mm 0.9s ease-in-out  ;
+
+}
